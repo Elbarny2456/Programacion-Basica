@@ -10,3 +10,4 @@ print("Entero = " entero)
 print("Cadena = ", cadena)
 print("flotante =" flotante)
 print("Booleano =", booleano)
+#que el print es printf, el c es un poco mas complicado  y tiene mas lineas de codigo pero ambos tienen parecido
