@@ -2,7 +2,7 @@ import os
 import time
 
 # Tiempo en segundos antes de cerrar el navegador (por ejemplo, 10 segundos)
-intervalo = 10  
+intervalo = 5  
 
 # Nombre del navegador (ejemplo: chrome, firefox, edge)
 navegador = "chrome"
