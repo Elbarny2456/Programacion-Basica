@@ -1,14 +1,16 @@
 
-lista_compras=int(input("desea agregar mandado si=1 no=0"))
-if lista_compras >= 0:
-    print("va agregue sus productos")
+pregunta = input("desea agregar mandado si/no:").strip().lower()
+
+if pregunta == "si":
+    num_articulos = int(input("¿cuantos articulos va a querer mijo?"))
+    lista_compras = []
+    for i in range(num_articulos):
+        compra = input(f"ingresa el nombre del producto {i + 1}:").strip()
+        lista_compras.append(compra)
+        print("lista de articulos")
+        for compra in lista_compras:
+            print(f"- {compra}")
+    
+    print("Ahinomasquedoplebes")
 else:
-    print("Nimodo")
-producto1 = input("Agrega el primer producto: ")
-lista_compras1(producto1)
-
-producto2 = input("Agrega el segundo producto: ")
-lista_compras1(producto2)
-
-producto3 = input("Agrega el tercer producto: ")
-lista_compras1(producto3)
+    print("Nimodo de todos modos no le vendemos a prietos")
