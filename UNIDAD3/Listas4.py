@@ -9,9 +9,12 @@ print(max(edades))#el numero max
 print(min(edades))#el numero minimo
 edades.sort()#ordenar menor a mayor y orden algebraico
 print(edades)
-Materias.remove("Programacion basica")#removeralgo de la lista
-Materias.append("Programacion Avanzada")
+#Materias.append()
+Materias.remove("Programacion basica")#removeralgo de la lista#agregar elemento si le pones un numero y luego una coma lo pone en la posicion que le digas
+Materias.insert(0, "Programacion Avanzada")
 print(Materias)
 print(Libre)
 print(Materias)
 print(Profes)
+for Materia in Materias:
+    print(Materia)
