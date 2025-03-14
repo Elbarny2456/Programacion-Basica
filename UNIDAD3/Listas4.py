@@ -14,7 +14,6 @@ Materias.remove("Programacion basica")#removeralgo de la lista#agregar elemento 
 Materias.insert(0, "Programacion Avanzada")
 print(Materias)
 print(Libre)
-print(Materias)
 print(Profes)
 for Materia in Materias:
     print(Materia)

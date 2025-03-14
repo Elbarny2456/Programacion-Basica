@@ -14,3 +14,4 @@ if pregunta == "si":
     print("Ahinomasquedoplebes")
 else:
     print("Nimodo de todos modos no le vendemos a prietos")
+
