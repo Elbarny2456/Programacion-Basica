@@ -1,5 +1,6 @@
 import time  # Primera librería: Para agregar pausas y simular procesos
 import random  # Segunda librería: Para generar valores aleatorios
+import csv
 
 # Menú principal
 def mostrar_menu():
@@ -9,7 +10,8 @@ def mostrar_menu():
     print("3. Eliminar datos del diccionario")
     print("4. Mostrar contenido de los diccionarios")
     print("5. Agregar datos aleatorios a los diccionarios")
-    print("6. Salir")
+    print("6. Guardar archivos en CVS")
+    print("7. Salir")
 
 # Diccionarios iniciales
 diccionario1 = {}
@@ -24,10 +26,28 @@ def agregar_dato_aleatorio():
     else:
         diccionario2[clave] = valor
         print(f"Dato aleatorio agregado al diccionario 2: {clave} -> {valor}")
+
+def guardar_diccionarios_combinados_en_csv(nombre_archivo, diccionario1, diccionario2):
+    lista_combinada = [
+        {"Diccionario": "Diccionario 1", "Clave": clave, "Valor": valor}
+        for clave, valor in diccionario1.items()
+    ] + [
+        {"Diccionario": "Diccionario 2", "Clave": clave, "Valor": valor}
+        for clave, valor in diccionario2.items()
+    ]
+    
+    if lista_combinada:
+        with open(nombre_archivo, mode='w', newline='', encoding='utf-8') as archivo_csv:
+            escritor = csv.DictWriter(archivo_csv, fieldnames=["Diccionario", "Clave", "Valor"])
+            escritor.writeheader()
+            escritor.writerows(lista_combinada)
+        print(f"Ambos diccionarios guardados en {nombre_archivo}.")
+    else:
+        print("Ambos diccionarios están vacíos, no se guardó el archivo.")
 # Bucle principal
 while True:
     mostrar_menu()
-    opcion = input("Selecciona una opción (1-6): ")
+    opcion = input("Selecciona una opción (1-7): ")
     
     if opcion == "1":
         # Agregar datos al diccionario 1
@@ -68,6 +88,9 @@ while True:
         agregar_dato_aleatorio()
 
     elif opcion == "6":
+      guardar_diccionarios_combinados_en_csv("diccionarios_combinados.csv", diccionario1, diccionario2)
+
+    elif opcion == "7":
         # Salir del programa
         print("Saliendo del programa...")
         time.sleep(1)  # Simular una pausa
@@ -75,4 +98,4 @@ while True:
 
     else:
         # Opción inválida
-        print("Opción no válida. Por favor, selecciona una opción del menú.")
+        print("Opción no válida. Por favor, selecciona un numero del 1 al 7 mensote.")
