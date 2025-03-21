@@ -40,6 +40,6 @@ if __name__ == "__main__":
     guardar_diccionarios_en_csv(archivo, datos)
 
     # Leer los diccionarios desde el archivo CSV
-    datos_leidos = leer_diccionarios_de_csv(archivo)
+   datos_leidos = leer_diccionarios_de_csv(archivo)
     print("Datos leídos del archivo CSV:")
     print(datos_leidos)
