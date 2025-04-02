@@ -32,7 +32,7 @@ class Gato(Animal):
 if __name__ == "__main__":
     animal = Animal("Animal genérico", "Desconocida", "Desconocida", "Gris")
     perro = Perro("Firulais", "Chihuahua", "Canino", "Blanco", "Guau guau")
-    gato = Gato("Michi", "Siames", "Felino", "Negro", "Miau")
+    gato = Gato("Michi", "Siames", "Felino", "Negro", "Muauuu")
 
     print(animal.presentarse())
     print(perro.presentarse())
