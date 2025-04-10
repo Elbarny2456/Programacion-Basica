@@ -1,0 +1,11 @@
+#Reporte de visita
+#Llegamos a las 11 am a el lugar de la empresa ubicado en la zona centro de aguascalientes. 
+Ingresamos al lugar y nos recibierpon amablemente.
+Nos pasaron a una bodega grande donde estaba dividia en secciones:
+MANUFACTURA: en este luegar soldaban los componentes a las placas
+TESTING: En esta area se probaba que las placas estuvieran funcionandoi correctamente es por asi decirflo la zona de control de calidad
+SOPORTE: En esta area se encarga de dar soporte tecnico (atender llamadas resolver dudas)
+Marketing: En esta area estaban encargados de la publicidad ademas de las redes sociales
+INGENIERIA: En esta area los ingenieros diseñaban las placas los circuitos en general es la zona donde se crea la magia.
+Esta empresa  tiene una filosofia muy buena ya que se ve que los trabajadores estan contentos con su trabajo
+se me hace interesante como una empresa hidrocalida pequeña  logre hacer tecnologia como esa."
