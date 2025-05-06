@@ -13,7 +13,7 @@ Algoritmo Medicion_Temperatura
 	
     
     Si temperatura > umbral_seguridad Entonces
-        alerta = "¡Alerta! La temperatura excede el límite de seguridad."
+        alerta = "La temperatura excede el límite de seguridad."
     Sino
         alerta = "Temperatura en rango seguro."
     FinSi
