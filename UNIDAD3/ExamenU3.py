@@ -45,6 +45,7 @@ def guardar_diccionarios_combinados_en_csv(nombre_archivo, diccionario1, diccion
     else:
         print("Ambos diccionarios están vacíos, no se guardó el archivo.")
 # Bucle principal
+inicio_total = time.perf_counter() 
 while True:
     mostrar_menu()
     opcion = input("Selecciona una opción (1-7): ")
@@ -94,6 +95,9 @@ while True:
         # Salir del programa
         print("Saliendo del programa...")
         time.sleep(1)  # Simular una pausa
+        fin_total = time.perf_counter()
+        print(f"Tiempo total de uso del programa: {fin_total - inicio_total:.4f} segundos")
+
         break
 
     else:
