@@ -1,0 +1,3 @@
+"Cuando generas un archivo .exe usando herramientas como pyinstaller en Python, normalmente aparecen dos carpetas: build y dist. Cada una tiene un propósito específico:
+- Carpeta build: Contiene archivos temporales creados durante el proceso de compilación. Sirve como espacio de trabajo para ensamblar el ejecutable, pero no es necesaria después de la creación del .exe.
+- Carpeta dist: Aquí se encuentra el .exe final junto con los archivos y bibliotecas necesarias para que funcione correctamente en otro sistema. Si necesitas distribuir tu programa, esta es la carpeta que debes compartir."
