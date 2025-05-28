@@ -12,3 +12,4 @@ Paso4:  Instalar pip y crear un entorno virtual
 Instalar pip (si no viene incluido)
 Ejecuta:
 python -m ensurepip --default-pip
+Luego de esto ya tienes instalado python
